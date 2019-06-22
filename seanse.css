@@ -1,0 +1,453 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    /* text-align: center; */
+    text-transform: uppercase;  
+    color: white;
+         }
+
+ div.text {
+     font-size: 1.5em;
+     margin: 0 35% ;  
+     }  
+     
+     span.text {
+        font-size: 1.5em;
+        margin: 0 35% ;  
+        }  
+
+body {
+    background-image: url("img/ticket.jpg"); 
+}         
+
+.image:hover {
+    
+    cursor: pointer;
+    opacity: .5;
+  }
+
+ .header-item {
+            display: flex;
+            flex-direction: row;
+            justify-content: center; 
+            align-items: flex-start;
+            padding: 70px;
+            margin: 30px;
+            font-size: 30px;
+                        }  
+
+ .miasta {
+   display: flex;
+   justify-content: center;
+    }                       
+         
+    ul li:not(:last-child):after {
+        content: "|";
+        color: rgb(247, 241, 241);
+        margin: 10px;
+    }
+
+    ul {
+
+        list-style-type: none;
+        
+        }
+
+.container {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+p {
+    height: 400px; 
+    line-height: 100vh; 
+    text-align: center;
+    /* font-weight: 900; */
+    /* font-size: 100px; */
+    /* font-family: cursive; */
+}
+
+p.image-container {
+    height: 400px; 
+    line-height: 100vh; 
+    text-align: center;
+}
+
+a:link, a:visited, a:hover, a:active { color: black; text-decoration: none}
+/* Navbar section */
+
+.nav {
+    width: 100%;
+    position: fixed;
+    transition: all 1.3s;
+}
+
+.nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    transition: color 1.3s;
+}
+
+/* Navbar section - Fixed */
+
+nav.fixed {
+    height: 90px;
+    /* background-color: rgba(0,0,139,0.5); */
+    line-height: 90px;
+}
+
+nav.fixed div.container {
+    height: 90px;
+    border-bottom: 1px solid #fff;
+    border-bottom: margin-left: 10%;
+
+}
+
+nav.fixed div.logo {
+    width: 160px;
+    height: 90px;
+    text-align: center;
+    float: left;
+}
+
+nav.fixed div.logo a {
+    font-size: 30px;
+}
+
+nav.fixed div.logo a:hover {
+    color: silver;
+}
+
+nav.fixed div.main_list {
+    width: 600px;
+    height: 90px;
+    float: right;
+    text-align: center;
+}
+
+nav.fixed div.main_list ul {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    list-style: none;
+}
+
+nav.fixed div.main_list ul li {
+    width: 120px;
+
+}
+
+nav.fixed div.main_list ul li a:hover {
+    color: #716a6a;
+}
+
+/* Navbar section - Scroll */
+
+nav.scroll {
+    height: 60px;
+    /* background-color: #000069; */
+    background-color: black;
+    line-height: 60px;
+}
+
+nav.scroll div.container {
+    border: none;
+}
+
+nav.scroll div.logo {
+    width: 160px;
+    height: 60px;
+    float: left;
+    text-align: center;
+}
+
+nav.scroll div.logo a {
+    font-size: 30px;
+}
+
+nav.scroll div.logo a:hover {
+    color: silver;
+}
+
+nav.scroll div.main_list {
+    width: 600px;
+    height: 60px;
+    float: right;
+    text-align: center;
+}
+
+nav.scroll div.main_list ul {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    list-style: none;
+}
+
+nav.scroll div.main_list ul li {
+    width: 120px;
+}
+
+nav.scroll div.main_list ul li a:hover {
+    color: #716a6a;
+}
+
+.nav div.nav_button {
+    display: none;
+}
+
+/* Active Link */
+
+.nav li.active a {
+    color: #716a6a;
+}
+
+/* Go up button */
+
+.goup {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    text-align:center;
+    line-height: 40px;
+    background-color: rgba(0,0,0,0.5);
+    transition: all 0.3s;
+    display: none;
+}
+
+.goup:hover {
+    background-color: rgba(0,0,0,1)
+}
+
+.goup a {
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #fff;
+}
+.logo {
+padding: 25px;
+}
+
+
+/* .krok2 {
+    width: 100%;
+    height: 50vh;
+    background: #dd6;
+    background-position: center;
+    background-size: cover;
+}
+
+.krok3 {
+    width: 100%;
+    height: 100vh;
+    background-color: darkblue;
+}
+
+.krok4 {
+    width: 100%;
+    height: 100vh;
+    background-color: darkred;
+}
+
+.krok5 {
+    width: 100%;
+    height: 100vh;
+    background-color: darkgreen;
+}
+
+.krok6 {
+    width: 100%;
+    height: 100vh;
+    background-color: darkgoldenrod;
+}
+
+.contact {
+    width: 100%;
+    height: 100vh;
+    background-color: darkgrey;
+}  */
+
+*/
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    
+    .container {
+        margin: 0
+        ;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    
+    .container{
+        margin: 0;
+    }
+    
+    /* Navbar section - Fixed */
+    
+    nav.fixed div.container{
+        border: none;   
+    }
+    
+    nav.fixed div.main_list {
+        width: 100%;
+        height: 0px;
+        /* background-color: rgba(0, 0, 139, 0.5); */
+        background-color: rgba(139, 0, 28, 0.5); 
+
+        overflow: hidden;
+        transition: all 0.4s;
+    }
+    
+    nav.fixed div.show {
+        height: 200px;
+    }
+    
+    nav.fixed div.main_list ul {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    
+    nav.fixed div.main_list ul li {
+        width: 100%;
+        height: 40px;
+        text-align: center;
+    }
+    
+    nav.fixed div.main_list ul li a {
+        display: table;
+        width: 100%;
+        height: 100%;
+        line-height: 40px;
+    }
+    
+    /* Navbar section - Scroll */
+    
+    
+    nav.scroll div.main_list {
+        width: 100%;
+        height: 0px;
+        background-color: #000069;
+        overflow: hidden;
+        transition: all 0.4s;
+    }
+    
+    nav.scroll div.show {
+        height: 200px;
+    }
+    
+    nav.scroll div.main_list ul {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    
+    nav.scroll div.main_list ul li {
+        width: 100%;
+        height: 40px;
+        text-align: center;
+    }
+    
+    nav.scroll div.main_list ul li a {
+        display: table;
+        width: 100%;
+        height: 100%;
+        line-height: 40px;
+    }
+    
+    /* Navbar section - Button */
+    
+    nav.fixed div.nav_button {
+        display: block;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        background-color: transparent;
+        outline: 0;
+    }
+    
+    nav.scroll div.nav_button {
+        display: block;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        background-color: transparent;
+    }
+    
+    .nav div.nav_button button {
+        width: 100%;
+        height: 100%;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        outline: 0;
+    }
+    
+    nav.fixed div.nav_button button.active span:nth-of-type(1) {
+        transform: rotate3d(0, 0, 1, 45deg);
+        position: absolute;
+        top: 20px
+    }
+    
+    nav.scroll div.nav_button button.active span:nth-of-type(1) {
+        transform: rotate3d(0, 0, 1, 45deg);
+        position: absolute;
+        top: 10px
+    }
+    
+    .nav div.nav_button button.active span:nth-of-type(2) {
+        display: none;
+    }
+    
+    nav.fixed div.nav_button button.active span:nth-of-type(3) {
+        transform: rotate3d(0, 0, 1, -45deg);
+        position: absolute;
+        top: 20px
+    }
+    
+    nav.scroll div.nav_button button.active span:nth-of-type(3) {
+        transform: rotate3d(0, 0, 1, -45deg);
+        position: absolute;
+        top: 10px
+    }
+    
+    .nav div.nav_button button span {
+        display: block;
+        height: 1px;
+        width: 98%;
+        background-color: #fff;
+        margin: 9px 1% 9px 1%;
+    }
+    
+    .nav div.nav_button button span:nth-of-type(1) {
+        transition: all 0.3s
+    }
+    
+    .nav div.nav_button button span:nth-of-type(2) {
+        transition: all 0.4s
+    }
+    
+    .nav div.nav_button button span:nth-of-type(3) {
+        transition: all 0.5s
+    }
+    
+    .nav div.nav_button button:hover span{
+        transform: rotateY(180deg);
+        background-color: silver;
+    }
+    
+    
