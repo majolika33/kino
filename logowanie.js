@@ -49,13 +49,14 @@ function validate() {
                 // window.open('kup_bilet.html','_blank');
                 // document.getElementById("form-wrapper").hidden=true;
 
-                var text= "Witaj " + mydata[i].nam + "! " + " Zapraszamy i życzymy udanego seansu";
+                var text= "Witaj " + mydata[i].nam + "! " + "<br></br>" + " Zapraszamy i życzymy udanego seansu";
                 document.getElementById('test').innerHTML = text;
 
                 document.getElementById("form-wrapper").style.visibility = 'hidden';
                 document.getElementById('zalogowany').style.visibility = 'visible';
                 // document.getElementById('zalogowany').innerHTML = img4 + " <br>" + " cdn..."
                 //  document.getElementById('zalogowany').style.fontSize='38px';
+            
                
                
                 // document.getElementById('welcome').style.visibility = 'hidden'
