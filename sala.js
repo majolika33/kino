@@ -12,7 +12,7 @@
 
 
 
-
+var sum=0;
 for(let j=0;j<10;j++){
   let para_parent = document.createElement("div");
   for(let i=0;i<10;i++){
@@ -24,27 +24,40 @@ for(let j=0;j<10;j++){
 		node.src = "img/sofa.png"
       para.appendChild(node);
       para_parent.appendChild(para);
-  }
-  var element = document.getElementById("divoz");
-  element.appendChild(para_parent);
+  
 
 
 // function changeTextColor(el){
 // 	el.style.color = 'blue';
 //   console.log('test');
 // }
-var sum=0;
-var elements = document.querySelectorAll('div span');
-elements.forEach((element) => {
-element.addEventListener('click', () =>{
-  if (element.style.background == 'red')   
 
-  {element.style.background = 'none'; sum = sum - 15; 
-  document.getElementById("cena").innerHTML = sum + "zł"}
-  else {element.style.background = 'red'; sum = sum + 15; 
-  document.getElementById("cena").innerHTML = sum + "zł";  }
+// var elements = document.querySelectorAll('div span');
+// elements.forEach((element) => {
 
-      
+// element.addEventListener('click', () =>{
+//   if (element.style.background == 'red')   
+
+//   {element.style.background = 'none'; sum = sum - 15; 
+//   document.getElementById("cena").innerHTML = sum + "zł"}
+//   else {element.style.background = 'red'; sum = sum + 15; 
+//   document.getElementById("cena").innerHTML = sum + "zł";  }
+
+para.addEventListener('click', () => {
+  if (para.style.background == 'red') {
+    para.style.background= 'none';
+    sum = sum - 15;
+    document.getElementById("cena").innerHTML = sum + "zł";
+  }
+  else {
+    para.style.background = 'red';
+    sum = sum + 15;
+    document.getElementById("cena").innerHTML = sum + "zł";
+  }
 });
-});;
+  }
+  var element = document.getElementById("divoz");
+  element.appendChild(para_parent);
+ 
 }
+

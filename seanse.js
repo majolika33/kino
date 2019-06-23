@@ -27,7 +27,7 @@ window.onscroll = function () {
 
     // Show and hide the Go Up button
 
-    if (winScrollTop > theWorksSec.offsetTop) {
+    if (theWorksSec !=null && winScrollTop > theWorksSec.offsetTop) {
         goUp.style.display = "block";
     } else {
         goUp.style.display = "none";
@@ -213,7 +213,6 @@ function avengers() {
     document.getElementById('praziomek').style.display = "none"
 
     document.getElementById('krok3').style.overflow = "visible"
-
 }
 
 function dumbo() {
@@ -225,8 +224,6 @@ function dumbo() {
     document.getElementById('topielisko').style.display = "none"
     document.getElementById('slodki-koniec').style.display = "none"
     document.getElementById('praziomek').style.display = "none"
-    document.getElementById('podly').style.display = "none"
-
     document.getElementById('krok3').style.overflow = "visible"
 
 }
