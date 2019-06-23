@@ -43,6 +43,8 @@ element.addEventListener('click', () =>{
   document.getElementById("cena").innerHTML = sum + "zł"}
   else {element.style.background = 'red'; sum = sum + 15; 
   document.getElementById("cena").innerHTML = sum + "zł";  }
+
+      
 });
 });;
 }

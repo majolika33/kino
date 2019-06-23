@@ -158,9 +158,7 @@ navButton.onclick = function () {
             var li = document.createElement('span');
             var button = document.querySelector('#jeden');
             button.appendChild(li);
-            // document.getElementById('seans').innerHTML = "Seanse na dzisiaj";
-
-
+            
       document.getElementById('avengers').innerHTML = img1
       document.getElementById('topielisko').innerHTML = img2
       document.getElementById('kraina_cudow').innerHTML = img3
@@ -227,6 +225,38 @@ function cityWaw() {
 
 }
 
+function cityGda() {
+
+    var mydata = JSON.parse(filmPoz);
+
+
+    var liczba = Object.keys(mydata).length
+    var img1 = "<img src=img/kraina_cudow.jpg>"
+    var img2 = "<img src=img/podly.jpg>"
+    var img3 = "<img src=img/dumbo.jpg>"
+    var img4 = "<img src=img/slodki_koniec.jpg>"
+
+
+    for (var i = 0; i < liczba; i++) {
+        if (mydata[i].city == 'Gdańsk') {
+            
+
+            var li = document.createElement('span');
+            var button = document.querySelector('#jeden');
+            button.appendChild(li);
+           
+
+      document.getElementById('kraina_cudow').innerHTML = img1
+      document.getElementById('podly').innerHTML = img2
+      document.getElementById('dumbo').innerHTML = img3
+      document.getElementById('slodki-koniec').innerHTML = img4
+
+        }
+
+    }
+  
+
+}
 
 
 
@@ -238,8 +268,8 @@ document.getElementById('topielisko').style.display="none"
 document.getElementById('kraina_cudow').style.display="none"
 document.getElementById('dumbo').style.display="none"
 document.getElementById('niedobrani').style.display="none"
-// document.getElementById('slodki-koniec').style.display="none"
-// document.getElementById('praziomek').style.display="none"
+document.getElementById('slodki-koniec').style.display="none"
+document.getElementById('praziomek').style.display="none"
 
 document.getElementById('krok3').style.overflow="visible"
 
@@ -268,6 +298,8 @@ function dumbo() {
     document.getElementById('kraina_cudow').style.display="none"
     document.getElementById('niedobrani').style.display="none"
     document.getElementById('topielisko').style.display = "none"
+    document.getElementById('slodki-koniec').style.display="none"
+document.getElementById('praziomek').style.display="none"
     document.getElementById('krok3').style.overflow="visible"
 
 
@@ -290,6 +322,8 @@ function kraina_cudow() {
     document.getElementById('dumbo').style.display="none"
     document.getElementById('niedobrani').style.display="none"
     document.getElementById('topielisko').style.display = "none"
+    document.getElementById('slodki-koniec').style.display="none"
+document.getElementById('praziomek').style.display="none"
     document.getElementById('krok3').style.overflow="visible"
 
          var kup=document.getElementById('kup')
@@ -311,6 +345,8 @@ function topielisko() {
     document.getElementById('dumbo').style.display="none"
     document.getElementById('niedobrani').style.display="none"
     document.getElementById('kraina_cudow').style.display = "none"
+    document.getElementById('slodki-koniec').style.display="none"
+document.getElementById('praziomek').style.display="none"
     document.getElementById('krok3').style.overflow="visible"
 
          var kup=document.getElementById('kup')
@@ -331,6 +367,8 @@ function niedobrani() {
     document.getElementById('dumbo').style.display="none"
     document.getElementById('topielisko').style.display="none"
     document.getElementById('kraina_cudow').style.display = "none"
+    document.getElementById('slodki-koniec').style.display="none"
+document.getElementById('praziomek').style.display="none"
     document.getElementById('krok3').style.overflow="visible"
 
          var kup=document.getElementById('kup')
@@ -344,7 +382,73 @@ kup.addEventListener("click", function(){
 
 }  
 
+function slodki_koniec() {
+    document.getElementById('wybranyfilm').innerHTML = "Wybrałeś film: Słodki Koniec Dnia"
+    document.getElementById('slodki-koniec').style.opacity = "1"
+    document.getElementById('avengers').style.display = "none"
+    document.getElementById('dumbo').style.display="none"
+    document.getElementById('niedobrani').style.display="none"
+    document.getElementById('kraina_cudow').style.display = "none"
+    document.getElementById('topielisko').style.display="none"
+document.getElementById('praziomek').style.display="none"
+    document.getElementById('krok3').style.overflow="visible"
 
+         var kup=document.getElementById('kup')
+kup.addEventListener("click", function(){
+ 
+    document.querySelector('.wrapper1').style.visibility =  "visible"
+
+    document.getElementById("div2").style.display = "none"
+    document.getElementById('kup').innerHTML="Zaloguj sie, aby kupić bilet/y"
+})
+
+} 
+
+function praziomek() {
+    document.getElementById('wybranyfilm').innerHTML = "Wybrałeś film: Praziomek"
+    document.getElementById('praziomek').style.opacity = "1"
+    document.getElementById('avengers').style.display = "none"
+    document.getElementById('dumbo').style.display="none"
+    document.getElementById('niedobrani').style.display="none"
+    document.getElementById('kraina_cudow').style.display = "none"
+    document.getElementById('slodki-koniec').style.display="none"
+document.getElementById('topielisko').style.display="none"
+    document.getElementById('krok3').style.overflow="visible"
+
+         var kup=document.getElementById('kup')
+kup.addEventListener("click", function(){
+ 
+    document.querySelector('.wrapper1').style.visibility =  "visible"
+
+    document.getElementById("div2").style.display = "none"
+    document.getElementById('kup').innerHTML="Zaloguj sie, aby kupić bilet/y"
+})
+
+} 
+
+function podly() {
+    document.getElementById('wybranyfilm').innerHTML = "Wybrałeś film: Podły, okrutny, zły"
+    document.getElementById('podly').style.opacity = "1"
+    document.getElementById('avengers').style.display = "none"
+    document.getElementById('dumbo').style.display="none"
+    document.getElementById('niedobrani').style.display="none"
+    document.getElementById('kraina_cudow').style.display = "none"
+    document.getElementById('slodki-koniec').style.display="none"
+    document.getElementById('topielisko').style.display="none"
+
+document.getElementById('praziomek').style.display="none"
+    document.getElementById('krok3').style.overflow="visible"
+
+         var kup=document.getElementById('kup')
+kup.addEventListener("click", function(){
+ 
+    document.querySelector('.wrapper1').style.visibility =  "visible"
+
+    document.getElementById("div2").style.display = "none"
+    document.getElementById('kup').innerHTML="Zaloguj sie, aby kupić bilet/y"
+})
+
+}  
 
 
 

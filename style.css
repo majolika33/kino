@@ -160,9 +160,14 @@ li {
     text-transform: uppercase;
     text-align-last:center;
     color: black;
+    background-color: rgb(247, 241, 241);
+    outline-color: blanchedalmond;
 }
 
-
+.input-color {
+    background-color: rgb(247, 241, 241);
+    outline-color: blanchedalmond;
+}
 .image {
     border-radius: 10px;
 }
@@ -173,9 +178,7 @@ li {
         opacity: .5;
       }
 
-.article {
-    /* font-size: 1,9em; */
-}      
+ 
 
 #divoz div {
     margin: 4px;
@@ -188,6 +191,7 @@ li {
     margin: 4px;
     padding: 4px;
 }
+
 
 
 /* nav, article, aside, footer {
@@ -204,6 +208,7 @@ li {
     text-transform: uppercase;
     text-align-last:center;
     color: black;
+    
 }
 
 .button:hover {
@@ -212,15 +217,15 @@ li {
 }
 
 .option:hover {
-    background-color: rgb(247, 241, 241)
+    background-color: rgb(247, 241, 241);
     outline-color: blanchedalmond;
-    /* box-shadow: 0 0 10px 100px #fff inset; */
+    /* box-shadow: 0 0 10px 100px #fff inset;  */
 
 }
 
-select:active {
-    background-color: rgb(247, 241, 241)
+/* select:active {
+    background-color: rgb(247, 241, 241);
     outline-color: blanchedalmond;
 
-}
+} */
 

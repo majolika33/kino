@@ -10,7 +10,7 @@
 
  div.text {
      font-size: 1.5em;
-     margin: 0 35% ;  
+     margin: 0 30%;  
      }  
      
      span.text {
@@ -449,5 +449,17 @@ padding: 25px;
         transform: rotateY(180deg);
         background-color: silver;
     }
+    
+     #divoz div {
+        margin: 4px;
+        padding: 4px;
+    }
+    
+    #divoz div span {
+        border-style: solid;
+        border-color: black;
+        margin: 4px;
+        padding: 4px;
+    } 
     
     
