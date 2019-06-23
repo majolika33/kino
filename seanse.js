@@ -1,9 +1,9 @@
 window.onscroll = function () {
-    
+
     "use strict";
-    
+
     // Vars
-    
+
     var winScrollTop = window.pageYOffset,
         navBar = document.getElementById("nav"),
         theAboutSec = document.getElementById("about"),
@@ -13,9 +13,9 @@ window.onscroll = function () {
         theContactSec = document.getElementById("contact"),
         theLIst = document.getElementById("list_ul"),
         goUp = document.getElementById("goup");
-    
+
     // Nav fixed to scroll and sscroll to fixed
-    
+
     if (winScrollTop > 0) {
         navBar.classList.remove("fixed");
         navBar.classList.add("scroll");
@@ -23,75 +23,30 @@ window.onscroll = function () {
         navBar.classList.remove("scroll");
         navBar.classList.add("fixed");
     }
-    
-    // Change the about background color when scroll 
-    
-    // if (winScrollTop >= theAboutSec.offsetTop - 400) {
-    //     theAboutSec.style.backgroundColor = "#0404ad";
-    // }
-            
-    // if (winScrollTop >= theAboutSec.offsetTop - 300) {
-    //     theAboutSec.style.backgroundColor = "#030386";
-    // }
-            
-    // if (winScrollTop >= theAboutSec.offsetTop - 200) {
-    //     theAboutSec.style.backgroundColor = "#000069";
-    // }
-    
-    // Change link color when scroll
-    
-    // if (winScrollTop >= theAboutSec.offsetTop - 60 && winScrollTop < theSkillsSec.offsetTop - 60) {
-    //     theLIst.firstElementChild.classList.add("active");
-    // } else {
-    //     theLIst.firstElementChild.classList.remove("active");
-    // }
-    
-    // if (winScrollTop >= theSkillsSec.offsetTop - 60 && winScrollTop < theWorksSec.offsetTop - 60) {
-    //     theLIst.children[1].classList.add("active");
-    // } else {
-    //     theLIst.children[1].classList.remove("active");
-    // }
-    
-    // if (winScrollTop >= theWorksSec.offsetTop - 60 && winScrollTop < theDesignSec.offsetTop - 60) {
-    //     theLIst.children[2].classList.add("active");
-    // } else {
-    //     theLIst.children[2].classList.remove("active");
-    // }
-    
-    // if (winScrollTop >= theDesignSec.offsetTop - 60 && winScrollTop < theContactSec.offsetTop - 60) {
-    //     theLIst.children[3].classList.add("active");
-    // } else {
-    //     theLIst.children[3].classList.remove("active");
-    // }
-    
-    // if (winScrollTop >= theContactSec.offsetTop - 60) {
-    //     theLIst.children[4].classList.add("active");
-    // } else {
-    //     theLIst.children[4].classList.remove("active");
-    // }
-    
+
+
     // Show and hide the Go Up button
-    
+
     if (winScrollTop > theWorksSec.offsetTop) {
         goUp.style.display = "block";
     } else {
         goUp.style.display = "none";
     }
 };
- 
+
 // function to scroll to the sections
 
 function scroll(toElement, speed) {
-    
+
     "use strict";
-    
+
     var winObject = window,
         windowTopScroll = winObject.pageYOffset,
-        pointer =  toElement.getAttribute('href').slice(1),
+        pointer = toElement.getAttribute('href').slice(1),
         elem = document.getElementById(pointer),
         elemOffset = elem.offsetTop,
         counter = setInterval(function () {
-            
+
             windowTopScroll;
             // From button to top
             if (windowTopScroll > elemOffset) {
@@ -118,7 +73,7 @@ var links = document.querySelectorAll("a[data-scroll]"),
 
 for (i = 0; i < links.length; i = i + 1) {
     links[i].onclick = function (e) {
-        
+
         "use strict";
         scroll(this, 28);
         e.preventDefault();
@@ -137,7 +92,7 @@ navButton.onclick = function () {
 
 
 
-  function cityPoz() {
+function cityPoz() {
 
     var mydata = JSON.parse(filmPoz);
 
@@ -153,27 +108,21 @@ navButton.onclick = function () {
 
     for (var i = 0; i < liczba; i++) {
         if (mydata[i].city == 'Poznań') {
-            
+
 
             var li = document.createElement('span');
             var button = document.querySelector('#jeden');
             button.appendChild(li);
-            
-      document.getElementById('avengers').innerHTML = img1
-      document.getElementById('topielisko').innerHTML = img2
-      document.getElementById('kraina_cudow').innerHTML = img3
-      document.getElementById('dumbo').innerHTML = img4
-      document.getElementById('niedobrani').innerHTML = img5
 
-
-
-
-
-
+            document.getElementById('avengers').innerHTML = img1
+            document.getElementById('topielisko').innerHTML = img2
+            document.getElementById('kraina_cudow').innerHTML = img3
+            document.getElementById('dumbo').innerHTML = img4
+            document.getElementById('niedobrani').innerHTML = img5
         }
 
     }
-  
+
 
 }
 
@@ -196,32 +145,24 @@ function cityWaw() {
 
     for (var i = 0; i < liczba; i++) {
         if (mydata[i].city == 'Warszawa') {
-            
+
 
             var li = document.createElement('span');
             var button = document.querySelector('#jeden');
             button.appendChild(li);
-            // document.getElementById('seans').innerHTML = "Seanse na dzisiaj";
 
 
-      document.getElementById('avengers').innerHTML = img1
-      document.getElementById('topielisko').innerHTML = img2
-      document.getElementById('kraina_cudow').innerHTML = img3
-      document.getElementById('dumbo').innerHTML = img4
-      document.getElementById('niedobrani').innerHTML = img5
-      document.getElementById('slodki-koniec').innerHTML = img6
-      document.getElementById('praziomek').innerHTML = img7
-
-
-
-
-
-
-
+            document.getElementById('avengers').innerHTML = img1
+            document.getElementById('topielisko').innerHTML = img2
+            document.getElementById('kraina_cudow').innerHTML = img3
+            document.getElementById('dumbo').innerHTML = img4
+            document.getElementById('niedobrani').innerHTML = img5
+            document.getElementById('slodki-koniec').innerHTML = img6
+            document.getElementById('praziomek').innerHTML = img7
         }
 
     }
-  
+
 
 }
 
@@ -239,55 +180,39 @@ function cityGda() {
 
     for (var i = 0; i < liczba; i++) {
         if (mydata[i].city == 'Gdańsk') {
-            
+
 
             var li = document.createElement('span');
             var button = document.querySelector('#jeden');
             button.appendChild(li);
-           
 
-      document.getElementById('kraina_cudow').innerHTML = img1
-      document.getElementById('podly').innerHTML = img2
-      document.getElementById('dumbo').innerHTML = img3
-      document.getElementById('slodki-koniec').innerHTML = img4
+
+            document.getElementById('kraina_cudow').innerHTML = img1
+            document.getElementById('podly').innerHTML = img2
+            document.getElementById('dumbo').innerHTML = img3
+            document.getElementById('slodki-koniec').innerHTML = img4
 
         }
 
     }
-  
+
 
 }
 
 
 
 function avengers() {
-document.getElementById('wybranyfilm').innerHTML = " Wybrałeś film: Avengers"
-document.getElementById('avengers').style.opacity = "1"
- 
-document.getElementById('topielisko').style.display="none"
-document.getElementById('kraina_cudow').style.display="none"
-document.getElementById('dumbo').style.display="none"
-document.getElementById('niedobrani').style.display="none"
-document.getElementById('slodki-koniec').style.display="none"
-document.getElementById('praziomek').style.display="none"
+    document.getElementById('wybranyfilm').innerHTML = " Wybrałeś film: Avengers"
+    document.getElementById('avengers').style.opacity = "1"
 
-document.getElementById('krok3').style.overflow="visible"
+    document.getElementById('topielisko').style.display = "none"
+    document.getElementById('kraina_cudow').style.display = "none"
+    document.getElementById('dumbo').style.display = "none"
+    document.getElementById('niedobrani').style.display = "none"
+    document.getElementById('slodki-koniec').style.display = "none"
+    document.getElementById('praziomek').style.display = "none"
 
-
-var kup=document.getElementById('kup')
-kup.addEventListener("click", function(){
- 
-    document.querySelector('.wrapper1').style.visibility =  "visible"
-
-    document.getElementById("div2").style.display = "none"
-    document.getElementById('rezerwuje').innerHTML="Zaloguj sie, aby kupić bilet/y"
-              document.getElementById('kup').style.visibility="hidden"
-})
-
-
-
-
-
+    document.getElementById('krok3').style.overflow = "visible"
 
 }
 
@@ -295,163 +220,130 @@ function dumbo() {
     document.getElementById('wybranyfilm').innerHTML = " Wybrałeś film: Dumbo"
     document.getElementById('dumbo').style.opacity = "1"
     document.getElementById('avengers').style.display = "none"
-    document.getElementById('kraina_cudow').style.display="none"
-    document.getElementById('niedobrani').style.display="none"
+    document.getElementById('kraina_cudow').style.display = "none"
+    document.getElementById('niedobrani').style.display = "none"
     document.getElementById('topielisko').style.display = "none"
-    document.getElementById('slodki-koniec').style.display="none"
-document.getElementById('praziomek').style.display="none"
-    document.getElementById('krok3').style.overflow="visible"
+    document.getElementById('slodki-koniec').style.display = "none"
+    document.getElementById('praziomek').style.display = "none"
+    document.getElementById('podly').style.display = "none"
 
-
-         var kup=document.getElementById('kup')
-kup.addEventListener("click", function(){
-
-    document.querySelector('.wrapper1').style.visibility =  "visible"
-
-    document.getElementById("div2").style.display = "none"
-    document.getElementById('rezerwuje').innerHTML="Zaloguj sie, aby kupić bilet/y"
-              document.getElementById('kup').style.visibility="hidden"
-})
+    document.getElementById('krok3').style.overflow = "visible"
 
 }
 
 function kraina_cudow() {
-    document.getElementById('wybranyfilm').innerHTML = "Wybrałeś film: Kraina cudów" 
+    document.getElementById('wybranyfilm').innerHTML = "Wybrałeś film: Kraina cudów"
     document.getElementById('kraina_cudow').style.opacity = "1"
     document.getElementById('avengers').style.display = "none"
-    document.getElementById('dumbo').style.display="none"
-    document.getElementById('niedobrani').style.display="none"
+    document.getElementById('dumbo').style.display = "none"
+    document.getElementById('niedobrani').style.display = "none"
     document.getElementById('topielisko').style.display = "none"
-    document.getElementById('slodki-koniec').style.display="none"
-document.getElementById('praziomek').style.display="none"
-    document.getElementById('krok3').style.overflow="visible"
+    document.getElementById('slodki-koniec').style.display = "none"
+    document.getElementById('praziomek').style.display = "none"
+    document.getElementById('krok3').style.overflow = "visible"
 
-         var kup=document.getElementById('kup')
-kup.addEventListener("click", function(){
    
-    document.querySelector('.wrapper1').style.visibility =  "visible"
-
-    document.getElementById("div2").style.display = "none"
-    document.getElementById('kup').innerHTML="Zaloguj sie, aby kupić bilet/y"
-})
-
 }
+
 
 
 function topielisko() {
     document.getElementById('wybranyfilm').innerHTML = "Wybrałeś film: Topielisko"
     document.getElementById('topielisko').style.opacity = "1"
     document.getElementById('avengers').style.display = "none"
-    document.getElementById('dumbo').style.display="none"
-    document.getElementById('niedobrani').style.display="none"
+    document.getElementById('dumbo').style.display = "none"
+    document.getElementById('niedobrani').style.display = "none"
     document.getElementById('kraina_cudow').style.display = "none"
-    document.getElementById('slodki-koniec').style.display="none"
-document.getElementById('praziomek').style.display="none"
-    document.getElementById('krok3').style.overflow="visible"
+    document.getElementById('slodki-koniec').style.display = "none"
+    document.getElementById('praziomek').style.display = "none"
+    document.getElementById('krok3').style.overflow = "visible"
 
-         var kup=document.getElementById('kup')
-kup.addEventListener("click", function(){
- 
-    document.querySelector('.wrapper1').style.visibility =  "visible"
 
-    document.getElementById("div2").style.display = "none"
-    document.getElementById('kup').innerHTML="Zaloguj sie, aby kupić bilet/y"
-})
-
-}  
+}
 
 function niedobrani() {
     document.getElementById('wybranyfilm').innerHTML = "Wybrałeś film: Niedobrani"
     document.getElementById('niedobrani').style.opacity = "1"
     document.getElementById('avengers').style.display = "none"
-    document.getElementById('dumbo').style.display="none"
-    document.getElementById('topielisko').style.display="none"
+    document.getElementById('dumbo').style.display = "none"
+    document.getElementById('topielisko').style.display = "none"
     document.getElementById('kraina_cudow').style.display = "none"
-    document.getElementById('slodki-koniec').style.display="none"
-document.getElementById('praziomek').style.display="none"
-    document.getElementById('krok3').style.overflow="visible"
+    document.getElementById('slodki-koniec').style.display = "none"
+    document.getElementById('praziomek').style.display = "none"
+    document.getElementById('krok3').style.overflow = "visible"
 
-         var kup=document.getElementById('kup')
-kup.addEventListener("click", function(){
-     
-    document.querySelector('.wrapper1').style.visibility =  "visible"
-
-    document.getElementById("div2").style.display = "none"
-    document.getElementById('kup').innerHTML="Zaloguj sie, aby kupić bilet/y"
-})
-
-}  
+  }
 
 function slodki_koniec() {
     document.getElementById('wybranyfilm').innerHTML = "Wybrałeś film: Słodki Koniec Dnia"
     document.getElementById('slodki-koniec').style.opacity = "1"
     document.getElementById('avengers').style.display = "none"
-    document.getElementById('dumbo').style.display="none"
-    document.getElementById('niedobrani').style.display="none"
+    document.getElementById('dumbo').style.display = "none"
+    document.getElementById('niedobrani').style.display = "none"
     document.getElementById('kraina_cudow').style.display = "none"
-    document.getElementById('topielisko').style.display="none"
-document.getElementById('praziomek').style.display="none"
-    document.getElementById('krok3').style.overflow="visible"
+    document.getElementById('topielisko').style.display = "none"
+    document.getElementById('praziomek').style.display = "none"
+    document.getElementById('krok3').style.overflow = "visible"
 
-         var kup=document.getElementById('kup')
-kup.addEventListener("click", function(){
- 
-    document.querySelector('.wrapper1').style.visibility =  "visible"
-
-    document.getElementById("div2").style.display = "none"
-    document.getElementById('kup').innerHTML="Zaloguj sie, aby kupić bilet/y"
-})
-
-} 
+    
+}
 
 function praziomek() {
     document.getElementById('wybranyfilm').innerHTML = "Wybrałeś film: Praziomek"
     document.getElementById('praziomek').style.opacity = "1"
     document.getElementById('avengers').style.display = "none"
-    document.getElementById('dumbo').style.display="none"
-    document.getElementById('niedobrani').style.display="none"
+    document.getElementById('dumbo').style.display = "none"
+    document.getElementById('niedobrani').style.display = "none"
     document.getElementById('kraina_cudow').style.display = "none"
-    document.getElementById('slodki-koniec').style.display="none"
-document.getElementById('topielisko').style.display="none"
-    document.getElementById('krok3').style.overflow="visible"
+    document.getElementById('slodki-koniec').style.display = "none"
+    document.getElementById('topielisko').style.display = "none"
+    document.getElementById('krok3').style.overflow = "visible"
 
-         var kup=document.getElementById('kup')
-kup.addEventListener("click", function(){
- 
-    document.querySelector('.wrapper1').style.visibility =  "visible"
-
-    document.getElementById("div2").style.display = "none"
-    document.getElementById('kup').innerHTML="Zaloguj sie, aby kupić bilet/y"
-})
-
-} 
+   
+}
 
 function podly() {
     document.getElementById('wybranyfilm').innerHTML = "Wybrałeś film: Podły, okrutny, zły"
     document.getElementById('podly').style.opacity = "1"
-    document.getElementById('avengers').style.display = "none"
-    document.getElementById('dumbo').style.display="none"
-    document.getElementById('niedobrani').style.display="none"
+    document.getElementById('dumbo').style.display = "none"
     document.getElementById('kraina_cudow').style.display = "none"
-    document.getElementById('slodki-koniec').style.display="none"
-    document.getElementById('topielisko').style.display="none"
+    document.getElementById('slodki-koniec').style.display = "none"
+    document.getElementById('krok3').style.overflow = "visible"
 
-document.getElementById('praziomek').style.display="none"
-    document.getElementById('krok3').style.overflow="visible"
+   }
 
-         var kup=document.getElementById('kup')
-kup.addEventListener("click", function(){
- 
-    document.querySelector('.wrapper1').style.visibility =  "visible"
+function kraina_cudow1() {
+    document.getElementById('wybranyfilm').innerHTML = "Wybrałeś film: Kraina cudów"
+    document.getElementById('kraina_cudow').style.opacity = "1"
+    document.getElementById('dumbo').style.display = "none"
+   document.getElementById('slodki-koniec').style.display = "none"
+    document.getElementById('podly').style.display = "none"
+    document.getElementById('krok3').style.overflow = "visible"
 
-    document.getElementById("div2").style.display = "none"
-    document.getElementById('kup').innerHTML="Zaloguj sie, aby kupić bilet/y"
-})
+   
+}
 
-}  
+function dumbo1() {
+    document.getElementById('wybranyfilm').innerHTML = "Wybrałeś film: Dumbo"
+    document.getElementById('dumbo').style.opacity = "1"
+    document.getElementById('kraina_cudow').style.display = "none"
+   document.getElementById('slodki-koniec').style.display = "none"
+    document.getElementById('podly').style.display = "none"
+    document.getElementById('krok3').style.overflow = "visible"
 
+   
+}
 
+function slodki_koniec1() {
+    document.getElementById('wybranyfilm').innerHTML = "Wybrałeś film: Słodki koniec"
+    document.getElementById('slodki-koniec').style.opacity = "1"
+    document.getElementById('kraina_cudow').style.display = "none"
+   document.getElementById('dumbo').style.display = "none"
+    document.getElementById('podly').style.display = "none"
+    document.getElementById('krok3').style.overflow = "visible"
 
+   
+}
 
 
 
