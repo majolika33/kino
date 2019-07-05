@@ -1,0 +1,213 @@
+//colors
+$white: white;
+$black: black;
+$color_fantasy_approx: rgb(247, 241, 241);
+$color_oasis_approx: blanchedalmond;
+$color_royal_purple_approx: rebeccapurple;
+
+//fonts
+$font_0: Playfair Display;
+$font_1: serif;
+
+//urls
+$url_0: url('img/ticket.jpg');
+
+//@extend-elements
+//original selectors
+//.button, .input-color, .option
+
+%extend_1 {
+
+	border-radius: 9px;
+	font-size: 15px;
+	padding: 10px 20px;
+	border: solid $black 2px;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align-last: center;
+	color: $black;
+}
+
+
+header {
+	width: 100%;
+	height: 100px;
+}
+body {
+	background-image: $url_0;
+}
+section {
+	width: 100%;
+	float: left;
+}
+nav {
+	width: 100%;
+	height: 200px;
+}
+footer {
+	width: 100%;
+	height: 100px;
+	clear: both;
+}
+* {
+	font-family: $font_0, $font_1;
+	text-align: center;
+	text-transform: uppercase;
+	color: $white;
+}
+*::selection {
+	color: $black;
+	background-color: $color_fantasy_approx;
+}
+li {
+	display: flex;
+	color: $black;
+	flex-direction: row;
+	justify-content: center;
+	padding: 20px;
+	align-items: flex-start;
+	a {
+		color: $white;
+		padding: 14px;
+		text-decoration: none;
+	}
+}
+ul {
+	display: block;
+	list-style-type: disc;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0;
+	margin-inline-end: 0;
+	padding-inline-start: 40px;
+	li {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		&:not(:last-child):after {
+			content: "|";
+			color: $color_fantasy_approx;
+		}
+	}
+}
+a {
+	&:link {
+		color: $black;
+		text-decoration: none;
+	}
+	&:visited {
+		color: $black;
+		text-decoration: none;
+	}
+	&:hover {
+		color: $black;
+		text-decoration: none;
+	}
+	&:active {
+		color: $black;
+		text-decoration: none;
+	}
+}
+.header-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.logo {
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	padding: 25px;
+}
+.login {
+	padding: 80px 150px;
+	justify-content: right;
+}
+.header-item {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 70px;
+	margin: 30px;
+	font-size: 30px;
+}
+.ukryj {
+	display: none;
+}
+.pokaz {
+	display: initial;
+}
+.navigation {
+	display: flex;
+	justify-content: center;
+}
+.kup-bilet {
+	font-size: 40px;
+}
+#logowanie {
+	font-size: 20px;
+	font-style: bold;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 9px;
+	font-size: 15px;
+	padding: 10px 20px;
+	border: solid $black 2px;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align-last: center;
+	color: $black;
+	background-color: $color_fantasy_approx;
+	outline-color: $color_oasis_approx;
+}
+.input-color {
+	background-color: $color_fantasy_approx;
+	outline-color: $color_oasis_approx;
+	@extend %extend_1;
+}
+.image {
+	border-radius: 10px;
+	&:hover {
+		cursor: pointer;
+		opacity: .5;
+	}
+}
+.gallery {
+	cursor: pointer;
+	opacity: .5;
+}
+.button {
+	@extend %extend_1;
+	&:hover {
+		color: $white;
+		border: solid $white 3px;
+	}
+}
+.option {
+	@extend %extend_1;
+	&:hover {
+		background-color: $color_fantasy_approx;
+		outline-color: $color_oasis_approx;
+	}
+}
+.test {
+	color: $color_royal_purple_approx;
+}
+.miasta ul {
+	display: block;
+	flex-direction: row;
+	justify-content: center;
+	padding: 10px;
+	margin: 40px;
+	font-size: 25px;
+}
+#divoz div {
+	margin: 4px;
+	padding: 4px;
+	span {
+		border-style: solid;
+		border-color: $black;
+		margin: 4px;
+		padding: 4px;
+	}
+}
